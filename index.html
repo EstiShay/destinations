@@ -9,35 +9,52 @@
   </head>
   <body>
     <div class="container">
+      <h1>Travel Destination</h1>
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Add a location:</h2>
+          <form id="new-location">
+            <div class="form-group">
+              <label for="new-place">Name:</label>
+              <input type="text" class="form-control" id="new-place">
+            </div>
+            <div class="form-group">
+              <label for="new-landmark">Landmark:</label>
+              <input type="text" class="form-control" id="new-landmark">
+            </div>
+            <div class="form-group">
+              <label for="new-toy">Best time of year to visit:</label>
+              <input type="text" class="form-control" id="new-toy">
+            </div>
+            <div class="form-group">
+              <label for="new-accom">Accomodations:</label>
+              <input type="text" class="form-control" id="new-accom">
+            </div>
+            <div class="form-group">
+              <label for="new-activities">Activities:</label>
+              <input type="text" class="form-control" id="new-activities">
+            </div>
+            <div class="form-group">
+              <label for="new-notes">Notes (or other misc.):</label>
+              <input type="text" class="form-control" id="new-notes">
+            </div>
+            <button type="submit" class="btn" value="Add">Add</button>
+          </form>
+        </div>
+        <div class="col-md-6">
+          <div id="full-details">
+            <h2></h2>
 
-      <h2>Add a location:</h2>
-      <form id="new-location">
-        <div class="form-group">
-          <label for="new-place">Name:</label>
-          <input type="text" class="form-control" id="new-place">
+            <p>Landmark: <span class="landmark"></span></p>
+            <p>Best Time of Year to Vist: <span class="toy"></span></p>
+            <p>Accomodations: <span class="accomodations"></span></p>
+            <p>Activities: <span class="activities"></span></p>
+            <p>Notes: <span class="notes"></span></p>
+
+          </div>
         </div>
-        <div class="form-group">
-          <label for="new-landmark">Landmark:</label>
-          <input type="text" class="form-control" id="new-landmark">
-        </div>
-        <div class="form-group">
-          <label for="new-toy">Best time of year to visit:</label>
-          <input type="text" class="form-control" id="new-toy">
-        </div>
-        <div class="form-group">
-          <label for="new-accom">Accomodations:</label>
-          <input type="text" class="form-control" id="new-accom">
-        </div>
-        <div class="form-group">
-          <label for="new-activities">Activities:</label>
-          <input type="text" class="form-control" id="new-activities">
-        </div>
-        <div class="form-group">
-          <label for="new-notes">Notes (or other misc.):</label>
-          <input type="text" class="form-control" id="new-notes">
-        </div>
-        <button type="submit" class="btn" value="Add">Add</button>
-      </form>
+      </div>
+
 
 
       <div id="reveal-location">

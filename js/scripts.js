@@ -9,7 +9,7 @@ function Location(placeName, landmark, timeOfYear, accomodations, activities, no
 }
 
 Location.prototype.displayLocation = function () {
-  return this.placeName + ": " + this.landmark + ", "  + this.timeOfYear + ", " + this.accomodations + ", " + this.activities + ", " + this.notes;
+  return this.placeName;
 }
 
 //UI logic
@@ -27,9 +27,18 @@ $(document).ready(function() {
 
     var newLocation = new Location(inputtedLocaleName, inputtedLandmark, inputtedTimeOfYear, inputtedAccomodations, inputtedActivities, inputtedNotes);
 
-    $("#reveal-location").append("<li>" + newLocation.displayLocation() + "</li>");
-
+    $("#reveal-location").append("<li><span class='locale'>" + newLocation.displayLocation() + "</span></li>");
     $("#reveal-location").show();
+
+    $(".locale").last().click(function(){
+      $("#full-details").show();
+      $("#full-details h2").text(newLocation.placeName);
+      $(".landmark").text(newLocation.landmark);
+      $(".toy").text(newLocation.timeOfYear);
+      $(".accomodations").text(newLocation.accomodations);
+      $(".activities").text(newLocation.activities);
+      $(".notes").text(newLocation.notes);
+    });
 
     $("input#new-place").val("");
     $("input#new-landmark").val("");

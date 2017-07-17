@@ -1,3 +1,13 @@
 #reveal-location {
   display: none;
 }
+#full-details {
+  display: none;
+}
+.locale {
+  color: #0088cc;
+  cursor: pointer;
+}
+.locale:hover {
+  text-decoration: underline;
+}
