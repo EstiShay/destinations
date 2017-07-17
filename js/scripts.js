@@ -31,5 +31,12 @@ $(document).ready(function() {
 
     $("#reveal-location").show();
 
+    $("input#new-place").val("");
+    $("input#new-landmark").val("");
+    $("input#new-toy").val("");
+    $("input#new-accom").val("");
+    $("input#new-activities").val("");
+    $("input#new-notes").val("");
+
   });
 });
