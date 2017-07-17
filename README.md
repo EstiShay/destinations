@@ -8,6 +8,12 @@
 
 A website to provide information about travel destinations.
 
+## Specifications
+
+* It can return the name of the location given.
+  * Input: Portland, Powell's, June etc.
+  * Ouput: Portland
+
 ## Set Up
 
 * Clone the repo
